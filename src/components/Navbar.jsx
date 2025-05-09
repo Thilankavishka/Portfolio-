@@ -1,9 +1,6 @@
 // components/Navbar.jsx
-
 import React, { useState } from 'react';
-import { FaGithub, FaLinkedin, FaTwitter,FaInstagram  } from 'react-icons/fa';
-import { FaFacebook } from 'react-icons/fa';
-
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,38 +20,27 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               <a href="#home" className="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">Home</a>
               <a href="#about" className="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">About</a>
+              <a href="#achievements" className="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">Achievements</a>
+              <a href="#certificates" className="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">Certificates</a>
               <a href="#skills" className="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">Skills</a>
               <a href="#projects" className="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">Projects</a>
               <a href="#contact" className="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">Contact</a>
             </div>
           </div>
+
+          {/* Social Icons */}
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6 space-x-4">
-              <a href="https://github.com/Thilankavishka" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-                <FaGithub size={20} />
-              </a>
-              <a href="https://www.linkedin.com/in/thilan-kavishka-749857251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-                <FaLinkedin size={20} />
-              </a>
-              <a href="https://www.facebook.com/share/1HtNTypZEQ/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-  <FaFacebook size={20} />
-</a>
-
-<a
-  href="https://www.instagram.com/thilan_kavishka?igsh=MTF1YzlubzAxbXF1eg=="
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-gray-300 hover:text-white"
->
-  <FaInstagram size={20} />
-</a>
+              <a href="https://github.com/Thilankavishka" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white"><FaGithub size={20} /></a>
+              <a href="https://www.linkedin.com/in/thilan-kavishka-749857251" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white"><FaLinkedin size={20} /></a>
+              <a href="https://www.facebook.com/share/1HtNTypZEQ/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white"><FaFacebook size={20} /></a>
+              <a href="https://www.instagram.com/thilan_kavishka" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white"><FaInstagram size={20} /></a>
             </div>
           </div>
+
+          {/* Mobile toggle */}
           <div className="-mr-2 flex md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
-            >
+            <button onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
               <svg className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
@@ -65,33 +51,23 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a href="#home" className="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">Home</a>
           <a href="#about" className="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">About</a>
+          <a href="#achievements" className="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">Achievements</a>
+          <a href="#certificates" className="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">Certificates</a>
           <a href="#skills" className="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">Skills</a>
           <a href="#projects" className="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">Projects</a>
           <a href="#contact" className="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">Contact</a>
         </div>
         <div className="pt-4 pb-3 border-t border-gray-700 flex justify-center space-x-6">
-          <a href="https://github.com/Thilankavishka" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-            <FaGithub size={20} />
-          </a>
-          <a href="https://www.linkedin.com/in/thilan-kavishka-749857251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-            <FaLinkedin size={20} />
-          </a>
-          <a href="https://www.facebook.com/share/1HtNTypZEQ/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-  <FaFacebook size={20} />
-</a>
-<a
-  href="https://www.instagram.com/thilan_kavishka?igsh=MTF1YzlubzAxbXF1eg=="
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-gray-300 hover:text-white"
->
-  <FaInstagram size={20} />
-</a>
-
+          <a href="https://github.com/Thilankavishka" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white"><FaGithub size={20} /></a>
+          <a href="https://www.linkedin.com/in/thilan-kavishka-749857251" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white"><FaLinkedin size={20} /></a>
+          <a href="https://www.facebook.com/share/1HtNTypZEQ/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white"><FaFacebook size={20} /></a>
+          <a href="https://www.instagram.com/thilan_kavishka" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white"><FaInstagram size={20} /></a>
         </div>
       </div>
     </nav>

@@ -21,11 +21,7 @@ const Achievements = () => {
     <section id="achievements" className="py-20 bg-gray-800 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <img
-            src="https://via.placeholder.com/600x200" // Banner image above section (optional)
-            alt="Achievements Banner"
-            className="mx-auto mb-6 rounded-lg shadow-md"
-          />
+          
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             <span className="border-b-4 border-purple-500 pb-2">Awards & Achievements</span>
           </h2>
