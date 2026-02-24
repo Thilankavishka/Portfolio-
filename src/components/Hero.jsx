@@ -19,7 +19,7 @@ const Hero = () => {
               </span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-              Full Stack Web Developer
+              Full Stack Web Developer, AL/ML Enthusiast, and Tech Explorer
             </h2>
             <p className="text-lg text-gray-300 mb-8 max-w-xl">
               I build exceptional digital experiences that are fast, accessible,
