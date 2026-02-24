@@ -53,7 +53,7 @@ const certificates = [
 
 const Certificates = () => {
   return (
-    <section id="certificates" className="py-20 bg-gray-950 text-white">
+    <section id="certificates" className="py-20  text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold">
