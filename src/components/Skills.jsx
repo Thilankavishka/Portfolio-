@@ -1,20 +1,131 @@
-import React from 'react';
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaJava } from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs, SiMongodb, SiExpress, SiRedux, SiSpringboot } from 'react-icons/si';
+import React from "react";
+import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaGitAlt,
+  FaJava,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiMongodb,
+  SiExpress,
+  SiSpringboot,
+  SiPandas,
+  SiNumpy,
+  SiPlotly,
+  SiDatabricks,
+  SiScikitlearn,
+  SiRedux,
+  SiDocker,
+  SiJupyter,
+  SiGooglecolab,
+} from "react-icons/si";
 
 const skills = [
-  { name: 'React', icon: <FaReact size={40} className="text-blue-400" />, level: '90%' },
-  { name: 'Node.js', icon: <FaNodeJs size={40} className="text-green-500" />, level: '85%' },
-  { name: 'JavaScript', icon: <FaJs size={40} className="text-yellow-400" />, level: '95%' },
-  { name: 'HTML5', icon: <FaHtml5 size={40} className="text-orange-500" />, level: '95%' },
-  { name: 'CSS3', icon: <FaCss3Alt size={40} className="text-blue-500" />, level: '90%' },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss size={40} className="text-cyan-400" />, level: '85%' },
-  { name: 'Next.js', icon: <SiNextdotjs size={40} className="text-white" />, level: '80%' },
-  { name: 'MongoDB', icon: <SiMongodb size={40} className="text-green-600" />, level: '75%' },
-  { name: 'Express', icon: <SiExpress size={40} className="text-gray-300" />, level: '80%' },
-  { name: 'Redux', icon: <SiRedux size={40} className="text-purple-500" />, level: '85%' },
-  { name: 'Git', icon: <FaGitAlt size={40} className="text-orange-600" />, level: '90%' },
-  { name: 'Spring Boot', icon: <SiSpringboot size={40} className="text-green-500" />, level: '70%' },
+  {
+    name: "React",
+    icon: <FaReact size={40} className="text-blue-400" />,
+    level: "90%",
+  },
+  {
+    name: "Node.js",
+    icon: <FaNodeJs size={40} className="text-green-500" />,
+    level: "85%",
+  },
+  {
+    name: "JavaScript",
+    icon: <FaJs size={40} className="text-yellow-400" />,
+    level: "95%",
+  },
+  {
+    name: "HTML5",
+    icon: <FaHtml5 size={40} className="text-orange-500" />,
+    level: "95%",
+  },
+  {
+    name: "CSS3",
+    icon: <FaCss3Alt size={40} className="text-blue-500" />,
+    level: "90%",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <SiTailwindcss size={40} className="text-cyan-400" />,
+    level: "85%",
+  },
+  {
+    name: "Next.js",
+    icon: <SiNextdotjs size={40} className="text-white" />,
+    level: "80%",
+  },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb size={40} className="text-green-600" />,
+    level: "75%",
+  },
+  {
+    name: "Express",
+    icon: <SiExpress size={40} className="text-gray-300" />,
+    level: "80%",
+  },
+  {
+    name: "Redux",
+    icon: <SiRedux size={40} className="text-purple-500" />,
+    level: "85%",
+  },
+  {
+    name: "Git",
+    icon: <FaGitAlt size={40} className="text-orange-600" />,
+    level: "90%",
+  },
+  {
+    name: "Spring Boot",
+    icon: <SiSpringboot size={40} className="text-green-500" />,
+    level: "70%",
+  },
+  {
+    name: "Pandas",
+    icon: <SiPandas size={40} className="text-blue-600" />,
+    level: "80%",
+  },
+  {
+    name: "NumPy",
+    icon: <SiNumpy size={40} className="text-blue-500" />,
+    level: "75%",
+  },
+  {
+    name: "Matplotlib",
+    icon: <SiPlotly size={40} className="text-orange-500" />,
+    level: "70%",
+  },
+  {
+    name: "Seaborn",
+    icon: <SiDatabricks size={40} className="text-teal-500" />,
+    level: "70%",
+  },
+  {
+    name: "Scikit-Learn",
+    icon: <SiScikitlearn size={40} className="text-orange-600" />,
+    level: "75%",
+  },
+  {
+    name: "Docker",
+    icon: <SiDocker size={40} className="text-blue-400" />,
+    level: "65%",
+  },
+  {
+    name: "Jupyter",
+    icon: <SiJupyter size={40} className="text-orange-500" />,
+    level: "85%",
+  },
+  {
+    name: "Google Colab",
+    icon: <SiGooglecolab size={40} className="text-yellow-500" />,
+    level: "85%",
+  },
 ];
 
 const Skills = () => {
@@ -36,10 +147,12 @@ const Skills = () => {
               <div className="mb-3 p-4 bg-gray-800 rounded-full hover:bg-gray-700 transition duration-300">
                 {skill.icon}
               </div>
-              <h3 className="font-semibold mb-2 text-sm sm:text-base">{skill.name}</h3>
+              <h3 className="font-semibold mb-2 text-sm sm:text-base">
+                {skill.name}
+              </h3>
               <div className="w-full bg-gray-700 rounded-full h-2.5">
-                <div 
-                  className="bg-gradient-to-r from-purple-500 to-pink-500 h-2.5 rounded-full transition-all duration-500" 
+                <div
+                  className="bg-gradient-to-r from-purple-500 to-pink-500 h-2.5 rounded-full transition-all duration-500"
                   style={{ width: skill.level }}
                 ></div>
               </div>

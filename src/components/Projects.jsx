@@ -1,57 +1,100 @@
-import React from 'react';
-import { FiExternalLink, FiGithub } from 'react-icons/fi';
+import React from "react";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 import Image6 from "../assets/Images/6.png";
 import Image7 from "../assets/Images/7.png";
 import Image8 from "../assets/Images/8.png";
 import Image10 from "../assets/Images/10.png";
-//import Image11 from "../assets/Images/";
-
+import Image13 from "../assets/Images/13.png";
+import Image14 from "../assets/Images/14.png";
 
 const projects = [
   {
     id: 1,
-    title: 'Medical Centre Management System',
-    description: 'A full-stack MERN application for managing university medical center operations with secure email alerts, role-based access, protected APIs, and responsive UI.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Express.js', 'JWT', 'REST API'],
+    title: "Medical Centre Management System",
+    description:
+      "A full-stack MERN application for managing university medical center operations with secure email alerts, role-based access, protected APIs, and responsive UI.",
+    tags: ["React", "Node.js", "MongoDB", "Express.js", "JWT", "REST API"],
     image: Image6,
-    github: 'https://github.com/Thilankavishka/Healthcare-University-Medical-Centre-Management-System.git',
-    live: '#'
+    github:
+      "https://github.com/Thilankavishka/Healthcare-University-Medical-Centre-Management-System.git",
+    live: "#",
   },
   {
     id: 2,
-    title: 'Library Management System',
-    description: 'Managing University Library effectively using MERN Stack.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Express.js', 'JWT', 'REST API'],
+    title: "Library Management System",
+    description: "Managing University Library effectively using MERN Stack.",
+    tags: ["React", "Node.js", "MongoDB", "Express.js", "JWT", "REST API"],
     image: Image7,
-    github: 'https://github.com/SGopinath89/IT2342024LibraryApp.git',
-    live: '#'
+    github: "https://github.com/SGopinath89/IT2342024LibraryApp.git",
+    live: "#",
   },
   {
     id: 3,
-    title: 'Canteen Management System',
-    description: 'Managing University Canteen efficiently using MERN Stack.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Express.js', 'JWT', 'REST API'],
-    image: Image8,
-    github: 'https://github.com/Thilankavishka/Canteen-Management-System-University-Of-Vavuniya.git',
-    live: '#'
+    title: "Demand Curve Clustering Tool for Load Pattern & Behavior Analysis",
+    description:
+      "An AI-powered research tool developed for Lanka Electricity Company (LECO) to analyze electricity consumption demand curves and identify customer load behavior patterns. The system uses data preprocessing, clustering algorithms, and visualization techniques to support energy optimization and smart grid decision-making.",
+    tags: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-Learn",
+      "Machine Learning",
+      "Clustering",
+      "Matplotlib",
+      "Seaborn",
+    ],
+    image: Image14, // replace with your LECO project image
+    github: "#", // add repo if available
+    live: "#",
   },
   {
     id: 4,
-    title: 'Simple Animation Game',
-    description: 'JavaScript-based animated game using HTML & CSS.',
-    tags: ['Javascript','html','css'],
-    image: Image10,
-    github: 'https://github.com/Thilankavishka/Simple-Animation-Game-Javascript-Html-Css.git',
-    live: '#'
+    title: "House Price Prediction Model",
+    description:
+      "A machine learning project that predicts house prices using Linear Regression. Built with Python, Pandas, NumPy, and Scikit-Learn, including data preprocessing, model training, evaluation, and API integration for real-world predictions.",
+    tags: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-Learn",
+      "Matplotlib",
+      "Machine Learning",
+      "Linear Regression",
+      "REST API",
+    ],
+    image: Image13,
+    github:
+      "https://github.com/Thilankavishka/House-Price-Prediction-Model.git",
+    live: "#",
   },
   {
     id: 5,
-    title: 'Bording Finder',
-    description: 'This is my Latest Project',
-    tags: ['Java','springboot','spring_tool_suite'],
+    title: "Canteen Management System",
+    description: "Managing University Canteen efficiently using MERN Stack.",
+    tags: ["React", "Node.js", "MongoDB", "Express.js", "JWT", "REST API"],
+    image: Image8,
+    github:
+      "https://github.com/Thilankavishka/Canteen-Management-System-University-Of-Vavuniya.git",
+    live: "#",
+  },
+  {
+    id: 6,
+    title: "Simple Animation Game",
+    description: "JavaScript-based animated game using HTML & CSS.",
+    tags: ["Javascript", "html", "css"],
+    image: Image10,
+    github:
+      "https://github.com/Thilankavishka/Simple-Animation-Game-Javascript-Html-Css.git",
+    live: "#",
+  },
+  {
+    id: 7,
+    title: "Bording Finder",
+    description: "This is my Latest Project",
+    tags: ["Java", "springboot", "spring_tool_suite"],
     image: "",
-    github: 'https://github.com/Thilankavishka/BordinFinder.git',
-    live: '#'
+    github: "https://github.com/Thilankavishka/BordinFinder.git",
+    live: "#",
   },
 ];
 
@@ -61,7 +104,9 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">
-            <span className="border-b-4 border-purple-500 pb-2">My Projects</span>
+            <span className="border-b-4 border-purple-500 pb-2">
+              My Projects
+            </span>
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto">
             A collection of some recent work and practical implementations.
@@ -106,7 +151,7 @@ const Projects = () => {
                       <FiGithub className="mr-2" /> Code
                     </a>
                   )}
-                  {project.live && project.live !== '#' ? (
+                  {project.live && project.live !== "#" ? (
                     <a
                       href={project.live}
                       target="_blank"
